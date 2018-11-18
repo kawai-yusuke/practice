@@ -41,5 +41,3 @@ if __name__ == "__main__":
 
     counter_3.increase()
     print(counter_3.value)
-
-# -5からプラス5していく
