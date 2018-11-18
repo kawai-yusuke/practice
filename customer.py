@@ -5,10 +5,13 @@ class Customer:
         self.age = age
 
     def full_name(self):
-        return self.first_name + self.family_name
+        return self.family_name + self.first_name
 
     def display_profile(self):
         print(f"Name: {self.full_name()}, Age: {self.age}")
+
+    def display_full_name(self):
+        print(self.full_name())
 
 
 if __name__ == "__main__":
@@ -19,3 +22,5 @@ if __name__ == "__main__":
 
     ken = Customer("Ken", "Yokoyama", 49)
     print(ken.full_name())
+    ken.display_profile()
+    ken.display_full_name()
